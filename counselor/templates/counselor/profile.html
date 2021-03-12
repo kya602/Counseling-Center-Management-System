@@ -1,0 +1,26 @@
+{% extends 'counselor/counselor_base.html' %}
+{% block body %}
+    <div class="splash">
+        <div >
+        <button type="button" class="btn btn-primary btn-lg btn-block"><strong><cursive>Welcome</cursive></strong></button>
+        </div>
+
+        <div class="splash">
+           <div class="btn-group-vertical" data-toggle="buttons">
+               <div class="border"></div>
+               <button type="button" class="btn btn-outline-secondary btn-lg">View Cases</button>
+               <div class="border"></div>
+               <!--<button type="button" class="btn btn-primary btn-lg "><a href="{% counselor:slots %}"></a>
+                   Manage Time-slots
+               </button>-->
+               <div class="border"></div>
+               <button type="button" class="btn btn-outline-secondary btn-lg">View Upcoming Sessions</button>
+               <div class="border"></div>
+               <button type="button" class="btn btn-primary btn-lg">View Client Profile</button>
+               <div class="border"></div>
+           </div>
+         </div>
+
+      <div class="border"></div>
+         <br><br><br>
+{% endblock %}

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counselling_Center_System</title>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="https://bootswatch.com/4/pulse/bootstrap.min.css" />
+    <link rel="stylesheet" href="cs.css">
+
+
+    <!--
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/services/">Services<!--<span class="sr-only">(current)</span>--></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/counselors/">Counselors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/resources/">Resources</a>
+        </li>
+    <!--<div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);">
+      <a class="dropdown-item" href="#">PDF's</a>
+        <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Articles</a>
+        <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">FAQ's</a>
+
+    </div>-->
+        <li class="nav-item">
+            <a class="nav-link" href="/admin/">Admin</a>
+        </li>
+    </ul>
+
+{% block nav %}
+       <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/client/signup/">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+       </ul>
+{% endblock %}
+      <!--
+     <div class="divider"></div>
+
+      <span>
+
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      </span></div>-->
+  </div>
+</nav>
+</head>
+
+
+<body>
+    <!--
+   <div class="wrapper"></div>
+   <div class="wrapper"></div>
+
+  <br><br><br><br><br><br><br><br>
+  -->
+{% block body %}
+{% endblock %}
+
+
+
+</body>
+
+<br><br><br><br>
+<footer id="footer">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card text-white bg-primary mb-3" >
+
+                <div class="card-body">
+                    <h4 class="card-title">North South University </h4>
+                        <p class="card-text">
+                         Bashundhara , Dhaka-1229, Bangladesh. <br>
+                        © 1993-2018 North South University. All rights reserved.<br>
+                        Phone: +880-2-55668200   |    Fax: +880-2-55668202 <br>
+                        registrar@northsouth.edu
+                        </p>
+                        <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+
+

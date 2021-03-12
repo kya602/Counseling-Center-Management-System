@@ -1,0 +1,40 @@
+#image-slider {
+  margin: 10px auto;
+  width: 800px;
+}
+
+#slide-frame {
+  height: 400px;
+  overflow: hidden;
+}
+
+#slides {
+  height: 500px;
+  overflow: hidden;
+  position: middle;
+}
+
+#slides img {
+  position: middle;
+  top: 0;
+  left: 60px;
+
+}
+
+#navigation {
+  margin: 5px 0 0 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#navigation a {
+  text-decoration: none;
+  background: #003C72;
+  padding: 2px 6px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+#navigation a:hover {
+  background: #0182C4;
+}

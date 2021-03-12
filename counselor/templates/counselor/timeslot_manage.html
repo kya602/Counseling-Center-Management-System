@@ -1,0 +1,17 @@
+{% extends 'counselor/counselor_base.html' %}
+
+{% block body %}
+<div style="padding-left:16px">
+    <h2><strong>Timeslots</strong></h2>
+    <ul>
+        {% for timeslot in counselor.timeslot_set %}
+        <li>{{timeslot}}</li>
+        {% endfor %}
+
+    </ul>
+</div>
+
+<div>
+    <a href="{% counselor:addSlot %}" >ADD SLOT</a>
+</div>
+{% endblock %}

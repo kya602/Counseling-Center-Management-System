@@ -1,0 +1,54 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+<div class="splash">
+    <div class="container" default-color="inverse">
+        <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+           <fieldset>
+              <!--<button type="button" class="btn btn-primary btn-lg btn-block">
+                <strong><cursive>Sign Up</cursive></strong>
+                </button>
+              -->
+              <legend><strong><center> Anxiety Test </center></strong></legend>
+
+              <div class="splash">
+                <div class="container">
+                    {% include 'client/anxiety_form.html' %}
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+              </div>
+          </fieldset>
+        </form>
+    </div>
+    <br>
+</div>
+
+
+
+
+<!-- Paginations -->
+
+<div>
+    <br>
+    <div class="container">
+        <div>
+            <center-align>
+                <ul class="pagination">
+                    <!--<li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>-->
+                    <li class="page-item"><a class="page-link" href="{% url 'client:bookAppointment' %}">1</a></li>
+                    <li class="page-item active">
+                        <a class="page-link" href="{% url 'client:anxiety' %}">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="{% url 'client:depression' %}">3</a></li>
+                    <!--<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>-->
+                </ul>
+            </center-align>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

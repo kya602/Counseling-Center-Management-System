@@ -1,0 +1,18 @@
+{% extends 'base_layout.html' %}
+
+{% block body %}
+<div style="padding-left:16px">
+    <h2><strong>Counselors</strong></h2>
+    <ul>
+        {% for counselor in all_counselors %}
+        <li>
+            {{counselor.name}}<br>
+            {{counselor.designation}}<br>
+            <!--<img src="{{counselor.photo}}"><br>-->
+            {{counselor.description}}<br><br>
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
+{% endblock %}
